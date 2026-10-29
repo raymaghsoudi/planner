@@ -4,7 +4,7 @@ from psycopg2.extras import RealDictCursor
 
 
 class TaskDatabase:
-    def __init__(self, host='localhost', dbname='todo_db', user='postgres', password='postgres'):
+    def __init__(self, host='localhost', dbname='todo_db', user='postgres', password='Postgres'):
         self.config = dict(host=host, dbname=dbname, user=user, password=password)
 
     def execute(self, sql, params=(), fetch=False):
